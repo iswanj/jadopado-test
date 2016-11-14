@@ -8,6 +8,10 @@
   background-color: #ed508a;
 }
 
+.redBackground {
+  background-color: #ff6853;
+}
+
 /* Font colors */
 .blueFont {
   color: #4f5dcd;

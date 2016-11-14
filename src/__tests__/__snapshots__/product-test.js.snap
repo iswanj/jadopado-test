@@ -1,4 +1,4 @@
-exports[`test Home page renders correctly 1`] = `
+exports[`test Product page renders correctly 1`] = `
 <div
   className={undefined}>
   <section
@@ -74,50 +74,69 @@ exports[`test Home page renders correctly 1`] = `
              #iphone #cases #mobile_phones #macbookpro
           </span>
         </p>
-        <a
+      </div>
+      <div
+        className={undefined}>
+        <div
           className={undefined}>
-          View 12 comments
-        </a>
+          <div
+            className={undefined}>
+            <img
+              alt="comment user"
+              src="https://randomuser.me/api/portraits/women/22.jpg" />
+          </div>
+          <div
+            className={undefined}>
+            <span
+              className={undefined}>
+              siliconalley
+            </span>
+             Vivamus augue ante, convallis eu congure sit amet, efficiture auis nibh. 
+            <a
+              className={undefined}
+              href="#">
+              #montmotors
+            </a>
+             Nullam porta est dolor. id fermentium ligula tncidun
+          </div>
+        </div>
+        <div
+          className={undefined}>
+          <div
+            className={undefined}>
+            <img
+              alt="comment user"
+              src="https://randomuser.me/api/portraits/women/22.jpg" />
+          </div>
+          <div
+            className={undefined}>
+            <span
+              className={undefined}>
+              siliconalley
+            </span>
+             Vivamus augue ante, convallis eu congure sit amet, efficiture auis nibh. 
+            <a
+              className={undefined}
+              href="#">
+              #montmotors
+            </a>
+             Nullam porta est dolor. id fermentium ligula tncidun
+          </div>
+        </div>
+      </div>
+      <div
+        className={undefined}>
+        <input
+          className={undefined}
+          placeholder="Write comment"
+          type="text" />
+        <button
+          className={undefined}>
+          <i
+            className="  " />
+        </button>
       </div>
     </div>
   </section>
-  <div
-    className={undefined}>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
-      <i
-        className="  " />
-    </a>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
-      <i
-        className="  " />
-    </a>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
-      <i
-        className="  " />
-    </a>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
-      <i
-        className="  " />
-    </a>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
-      <i
-        className="  " />
-    </a>
-  </div>
 </div>
 `;
