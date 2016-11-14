@@ -1,0 +1,14 @@
+.background {
+  background-color: #EEE;
+}
+.pinkBackground {
+  background-color: #fd629c;
+}
+.pinkBackgroundHover {
+  background-color: #ed508a;
+}
+
+/* Font colors */
+.blueFont {
+  color: #4f5dcd;
+}

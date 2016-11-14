@@ -1,0 +1,63 @@
+.app {
+  display: flex;
+  flex-grow: 1;
+  min-height: 100vh;
+  composes: background from 'colors.css';
+}
+.mainContainer {
+  position: relative;
+  flex: 1;
+}
+.text {
+  color: #F60;
+}
+
+/* products list styles */
+.products {
+  flex: 1;
+  flex-direction: column;
+}
+
+.item {
+  flex-direction: column;
+}
+
+.topHeader {
+  display: flex;
+  flex-direction: row;
+  height: 54px;
+  background-color: #FFF;
+  box-shadow: 0 1px 1px #CCC;
+}
+
+.user {
+  display: flex;
+  flex-grow: 8;
+  padding-left: 15px;
+}
+.userPic {
+  width: 35px;
+  height: 35px;
+  border-radius: 70%;
+  align-self: center;
+}
+.username {
+  font-size: .75em;
+  font-weight: 700;
+  align-self: center;
+  padding-left: 6px;
+  composes: blueFont from 'colors.css';
+}
+.distance {
+  flex-grow: 2;
+  align-self: center;
+  text-align: right;
+  padding-right: 10px;
+  color: #999;
+  font-size: .75em;
+}
+
+.distance span {
+  color: #888;
+  font-weight: 700;
+}

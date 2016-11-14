@@ -1,0 +1,8 @@
+exports[`test Home page renders correctly 1`] = `
+<div>
+  <h3
+    className={undefined}>
+    Home
+  </h3>
+</div>
+`;
