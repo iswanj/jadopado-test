@@ -1,8 +1,123 @@
 exports[`test Home page renders correctly 1`] = `
-<div>
-  <h3
+<div
+  className={undefined}>
+  <section
     className={undefined}>
-    Home
-  </h3>
+    <div
+      className={undefined}>
+      <div
+        className={undefined}>
+        <div
+          className={undefined}>
+          <img
+            alt="User Pic"
+            className={undefined}
+            src="https://randomuser.me/api/portraits/men/13.jpg" />
+          <span
+            className={undefined}>
+            tracymacgrady
+          </span>
+        </div>
+        <div
+          className={undefined}>
+          <span>
+            500m
+          </span>
+           away
+        </div>
+      </div>
+      <div
+        className={undefined}
+        style={
+          Object {
+            "backgroundImage": "url(/images/leaf-iphone-case.jpg)",
+          }
+        }>
+        <div
+          className={undefined}>
+          <div
+            className={undefined}>
+            <p>
+              Leaf iPhone Case Hard Plastic
+            </p>
+            <p>
+              <strong>
+                AED 230
+              </strong>
+            </p>
+          </div>
+          <div
+            className={undefined}>
+            <i
+              className="  " />
+            <i
+              className="  " />
+          </div>
+        </div>
+      </div>
+      <div
+        className={undefined}>
+        <i
+          className="  " />
+         32 likes
+      </div>
+      <div
+        className={undefined}>
+        <div
+          className={undefined}>
+          <p
+            className={undefined}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          </p>
+          <p
+            className={undefined}>
+            #iphone #cases #mobile_phones #macbookpro
+          </p>
+          <a
+            className={undefined}>
+            View 12 comments
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    className={undefined}>
+    <a
+      className={undefined}
+      onClick={[Function]}
+      style={Object {}}>
+      <i
+        className="  " />
+    </a>
+    <a
+      className={undefined}
+      onClick={[Function]}
+      style={Object {}}>
+      <i
+        className="  " />
+    </a>
+    <a
+      className={undefined}
+      onClick={[Function]}
+      style={Object {}}>
+      <i
+        className="  " />
+    </a>
+    <a
+      className={undefined}
+      onClick={[Function]}
+      style={Object {}}>
+      <i
+        className="  " />
+    </a>
+    <a
+      className={undefined}
+      onClick={[Function]}
+      style={Object {}}>
+      <i
+        className="  " />
+    </a>
+  </div>
 </div>
 `;

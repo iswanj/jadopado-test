@@ -23,7 +23,7 @@ const BottomNavigation = () => {
         <Icon name="icon-search" />
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default BottomNavigation;

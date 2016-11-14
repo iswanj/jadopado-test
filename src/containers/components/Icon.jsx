@@ -14,12 +14,12 @@ const Icon = (props) => {
   ].join(" ");
   return (
     <i className={iconStyle}></i>
-  )
+  );
 };
 
 Icon.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string
-}
+};
 
 export default Icon;

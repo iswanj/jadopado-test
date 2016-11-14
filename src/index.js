@@ -4,7 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
-import { browserHistory} from 'react-router';
+import { browserHistory } from 'react-router';
 
 import Root from './containers/Root';
 
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 const store = createStore(
   reducer,
   applyMiddleware(...middleware)
-)
+);
 
 ReactDOM.render(
   <Root store={store} history={browserHistory} />,
