@@ -1,12 +1,43 @@
-function getProducts(state, newState) {
-  return { ...state, ...newState };
+import { combineReducers } from 'redux';
+
+function addComments(state, newState) {
+  const newComments = state[newState.id].comments.concat(newState.comment);
+  return { ...state, ...state[newState.id].comments = [] };
 }
 
-export default function(state = {}, action) {
+const byId = (state = {}, action) => {
   switch (action.type) {
-  case 'GET_PRODUCTS':
-    return getProducts(state, action.state);
+  case 'RECEIVE_PRODUCTS':
+    return {
+      ...state,
+      ...action.products.reduce((obj, product) => {
+        obj[product.id] = product;
+        return obj;
+      }, {})
+    };
+  case 'ADD_COMMENT':
+    return addComments(state, action.data);
   default:
     return state;
   }
-}
+};
+
+const visibleIds = (state = [], action) => {
+  switch (action.type) {
+  case 'RECEIVE_PRODUCTS':
+    return action.products.map(product => product.id);
+  default:
+    return state;
+  }
+};
+
+export default combineReducers({
+  byId,
+  visibleIds
+});
+
+export const getProduct = (state, id) =>
+  state.byId[id];
+
+export const getVisibleProducts = state =>
+  state.visibleIds.map(id => getProduct(state, id));

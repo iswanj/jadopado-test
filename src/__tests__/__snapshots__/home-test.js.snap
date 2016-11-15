@@ -21,7 +21,8 @@ exports[`test Home page renders correctly 1`] = `
         <div
           className={undefined}>
           <span>
-            500m
+            500
+            m
           </span>
            away
         </div>
@@ -45,7 +46,8 @@ exports[`test Home page renders correctly 1`] = `
             </p>
             <p>
               <strong>
-                AED 230
+                AED 
+                450
               </strong>
             </p>
           </div>
@@ -62,21 +64,29 @@ exports[`test Home page renders correctly 1`] = `
         className={undefined}>
         <i
           className="  " />
-         32 likes
+         
+        32
+         likes
       </div>
       <div
         className={undefined}>
         <p
           className={undefined}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
           <span
             className={undefined}>
-             #iphone #cases #mobile_phones #macbookpro
+             
+            #iphone 
+            #cases 
+            #mobile_phones 
+            #macbookpro 
           </span>
         </p>
         <a
           className={undefined}>
-          View 12 comments
+          View 
+          2
+           comments
         </a>
       </div>
     </div>
@@ -111,13 +121,141 @@ exports[`test Home page renders correctly 1`] = `
       <i
         className="  " />
     </a>
-    <a
-      className={undefined}
-      onClick={[Function]}
-      style={Object {}}>
+    <p
+      className=" "
+      onClick={[Function]}>
       <i
         className="  " />
-    </a>
+    </p>
+  </div>
+  <div
+    className=" false">
+    <div
+      className={undefined}>
+      <input
+        placeholder="What are you looking for?"
+        type="text" />
+    </div>
+    <div
+      className={undefined}>
+      <p>
+        Search within 
+        <strong>
+          0
+          km
+        </strong>
+      </p>
+      <div
+        className={undefined}>
+        <div
+          aria-disabled={false}
+          className="InputRange"
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onTouchStart={[Function]}>
+          <span
+            className="InputRange-label InputRange-label--min">
+            <span
+              className="InputRange-labelContainer">
+              0
+            </span>
+          </span>
+          <div
+            className="InputRange-track InputRange-track--container"
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}>
+            <div
+              className="InputRange-track InputRange-track--active"
+              style={
+                Object {
+                  "left": "0%",
+                  "width": "0%",
+                }
+              } />
+            <span
+              className="InputRange-sliderContainer"
+              style={
+                Object {
+                  "left": "0%",
+                  "position": "absolute",
+                }
+              }>
+              <span
+                className="InputRange-label InputRange-label--value">
+                <span
+                  className="InputRange-labelContainer">
+                  0
+                </span>
+              </span>
+              <a
+                aria-controls={undefined}
+                aria-labelledby={undefined}
+                aria-valuemax={120}
+                aria-valuemin={0}
+                aria-valuenow="0"
+                className="InputRange-slider"
+                draggable="false"
+                href="#"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+                role="slider" />
+            </span>
+          </div>
+          <span
+            className="InputRange-label InputRange-label--max">
+            <span
+              className="InputRange-labelContainer">
+              120
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className={undefined}>
+      <div
+        className={undefined}>
+        <h2>
+          trending search
+        </h2>
+        <p
+          className={undefined}>
+          <span>
+            #hammock
+          </span>
+           
+          <span>
+            #iceberg
+          </span>
+           
+          <span>
+            #whenindubai
+          </span>
+           
+          <span>
+            #lettuceleaf
+          </span>
+           
+          <span>
+            #Isxv8
+          </span>
+          <span>
+            #marvel
+          </span>
+           
+          <span>
+            #dc
+          </span>
+           
+          <span>
+            #cat
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;

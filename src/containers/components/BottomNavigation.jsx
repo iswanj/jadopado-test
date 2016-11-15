@@ -4,7 +4,8 @@ import { Link } from 'react-router';
 import Icon from './Icon';
 import styles from 'components/bottom-navigation.css';
 
-const BottomNavigation = () => {
+const BottomNavigation = (props) => {
+  const searchIconName = !props.searchModal ? "icon-search" : "icon-cancel-1";
   return (
     <div className={styles.container}>
       <Link to="/home" className={styles.links} activeClassName={styles.active}>
@@ -19,9 +20,9 @@ const BottomNavigation = () => {
       <Link to="/user" className={styles.links} activeClassName={styles.active}>
         <Icon name="icon-user" />
       </Link>
-      <Link to="/search" className={styles.links} activeClassName={styles.active}>
-        <Icon name="icon-search" />
-      </Link>
+      <p className={[styles.links, styles.searchLink].join(" ")} onClick={() => props.onSearch()}>
+        <Icon name={searchIconName} />
+      </p>
     </div>
   );
 };

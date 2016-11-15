@@ -21,7 +21,8 @@ exports[`test Product page renders correctly 1`] = `
         <div
           className={undefined}>
           <span>
-            500m
+            500
+            m
           </span>
            away
         </div>
@@ -45,7 +46,8 @@ exports[`test Product page renders correctly 1`] = `
             </p>
             <p>
               <strong>
-                AED 230
+                AED 
+                450
               </strong>
             </p>
           </div>
@@ -62,16 +64,22 @@ exports[`test Product page renders correctly 1`] = `
         className={undefined}>
         <i
           className="  " />
-         32 likes
+         
+        32
+         likes
       </div>
       <div
         className={undefined}>
         <p
           className={undefined}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
           <span
             className={undefined}>
-             #iphone #cases #mobile_phones #macbookpro
+             
+            #iphone 
+            #cases 
+            #mobile_phones 
+            #macbookpro 
           </span>
         </p>
       </div>
@@ -82,22 +90,17 @@ exports[`test Product page renders correctly 1`] = `
           <div
             className={undefined}>
             <img
-              alt="comment user"
-              src="https://randomuser.me/api/portraits/women/22.jpg" />
+              alt="jevonjans"
+              src="https://randomuser.me/api/portraits/men/98.jpg" />
           </div>
           <div
             className={undefined}>
             <span
               className={undefined}>
-              siliconalley
+              jevonjans
             </span>
-             Vivamus augue ante, convallis eu congure sit amet, efficiture auis nibh. 
-            <a
-              className={undefined}
-              href="#">
-              #montmotors
-            </a>
-             Nullam porta est dolor. id fermentium ligula tncidun
+             
+            Adhuc liberavisse cu pro. Ex eam mutat ancillae noluisse. Ius ad autem aliquid vulputate
           </div>
         </div>
         <div
@@ -105,22 +108,17 @@ exports[`test Product page renders correctly 1`] = `
           <div
             className={undefined}>
             <img
-              alt="comment user"
-              src="https://randomuser.me/api/portraits/women/22.jpg" />
+              alt="robynrihanna"
+              src="https://randomuser.me/api/portraits/women/28.jpg" />
           </div>
           <div
             className={undefined}>
             <span
               className={undefined}>
-              siliconalley
+              robynrihanna
             </span>
-             Vivamus augue ante, convallis eu congure sit amet, efficiture auis nibh. 
-            <a
-              className={undefined}
-              href="#">
-              #montmotors
-            </a>
-             Nullam porta est dolor. id fermentium ligula tncidun
+             
+            Te nec soleat graece commune, cu pri ferri verear dignissim, case wisi ad vim. Modo iusto aperiam eu eos, etiam convenire assueverit cum no.
           </div>
         </div>
       </div>
@@ -131,12 +129,32 @@ exports[`test Product page renders correctly 1`] = `
           placeholder="Write comment"
           type="text" />
         <button
-          className={undefined}>
+          className={undefined}
+          onClick={[Function]}>
           <i
             className="  " />
         </button>
       </div>
     </div>
   </section>
+  <div
+    className={undefined}>
+    <div
+      className={undefined}>
+      <a
+        className={undefined}
+        onClick={[Function]}
+        style={Object {}}>
+        <i
+          className="  " />
+      </a>
+    </div>
+    <div
+      className={undefined}>
+      Photos
+    </div>
+    <div
+      className={undefined} />
+  </div>
 </div>
 `;

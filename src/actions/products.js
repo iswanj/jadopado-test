@@ -1,15 +1,22 @@
-// export function setState(state) {
-//   return function (dispatch) {
-//     console.log(new Date(), 'Dispatch action now:');
-//     setTimeout(function () {
-//       dispatch({
-//         type: 'SET_STATE',
-//         state
-//       });
-//       console.log(new Date(), 'End');
-//     }, 1500);
-//   };
-// }
+import shop from '../api/shop';
+
+export function getAllProducts() {
+  return function(dispatch) {
+    shop.getProducts(products => {
+      dispatch({
+        type: 'RECEIVE_PRODUCTS',
+        products: products
+      });
+    });
+  };
+}
+
+export function addComment(data) {
+  return {
+    type: 'ADD_COMMENT',
+    data
+  };
+}
 
 // export function vote(entry) {
 //   return {

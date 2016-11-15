@@ -5,6 +5,7 @@ import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducer from './reducers';
 import { browserHistory } from 'react-router';
+import { getAllProducts } from './actions';
 
 import Root from './containers/Root';
 
@@ -17,6 +18,8 @@ const store = createStore(
   reducer,
   applyMiddleware(...middleware)
 );
+
+store.dispatch(getAllProducts());
 
 ReactDOM.render(
   <Root store={store} history={browserHistory} />,
