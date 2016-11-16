@@ -46,6 +46,7 @@
 .productImg {
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .image {
@@ -55,6 +56,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+
+.image img {
+  height: 260px;
 }
 
 .imageDetails {

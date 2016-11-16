@@ -1,9 +1,14 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 import Icon from './Icon';
 import CommentInput from './CommentInput';
 
 import styles from 'components/product.css';
+
+let width = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
 
 function renderAllCommentsLink(data) {
   return <a className={styles.morelink}>View {data.comments.length} comments</a>;
@@ -37,12 +42,38 @@ function renderCommentInput(addComment) {
   );
 }
 
-const ProductItem = (props) => {
-  const productImage = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/images/${props.data.images[0]})`,
-    width: `${window.innerWidth}px`
-  };
+function renderSlider(data) {
+  if (data.images.length === 1) {
+    const productImage = {
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/${data.images[0]})`,
+      width: `${width}px`
+    };
 
+    return <div className={styles.image} style={productImage}></div>;
+  } else {
+    const settings = {
+      dots: false,
+      arrows: false,
+      infinite: false
+    };
+
+    const renderImages = (image) => {
+      const productImage = {
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/${image})`,
+        width: `${width}px`
+      };
+      return <div className={styles.image} style={productImage}></div>;
+    };
+
+    return (
+      <Slider {...settings}>
+        {data.images.map(renderImages)}
+      </Slider>
+    );
+  }
+}
+
+const ProductItem = (props) => {
   const handleClick = (id) => {
     props.navigateTo && props.navigateTo(`product/${id}`);
   };
@@ -58,9 +89,8 @@ const ProductItem = (props) => {
           <span>{props.data.distance}m</span> away
         </div>
       </div>
-      <div className={styles.productImg} onClick={() => handleClick(props.data.id)}>
-        <div className={styles.image} style={productImage}></div>
-
+      <div className={styles.productImg} style={{ width: `${width}` }} onClick={() => handleClick(props.data.id)}>
+        {renderSlider(props.data)}
         <div className={styles.imageDetails}>
           <div className={styles.name}>
             <p>{props.data.title}</p>

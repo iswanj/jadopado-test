@@ -4808,7 +4808,7 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "http://r.cnpmjs.org/slice-ansi/download/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
-slick-carousel@^1.6.0:
+slick-carousel, slick-carousel@^1.6.0:
   version "1.6.0"
   resolved "http://r.cnpmjs.org/slick-carousel/download/slick-carousel-1.6.0.tgz#780f378e470f4e6f6bec1aa2bae0475f4f9eb085"
   dependencies:
