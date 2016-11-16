@@ -38,8 +38,9 @@ function renderCommentInput(addComment) {
 }
 
 const ProductItem = (props) => {
-  var productImage = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/images/${props.data.images[0]})`
+  const productImage = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/${props.data.images[0]})`,
+    width: `${window.innerWidth}px`
   };
 
   const handleClick = (id) => {
@@ -58,9 +59,8 @@ const ProductItem = (props) => {
         </div>
       </div>
       <div className={styles.productImg} onClick={() => handleClick(props.data.id)}>
-        <div className={styles.image} style={productImage}>
+        <div className={styles.image} style={productImage}></div>
 
-        </div>
         <div className={styles.imageDetails}>
           <div className={styles.name}>
             <p>{props.data.title}</p>
