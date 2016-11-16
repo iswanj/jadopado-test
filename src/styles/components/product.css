@@ -154,6 +154,7 @@
 .cmtImage {
   flex-grow: 1;
   width: 40px;
+  max-width: 40px;
   height: 40px;
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Icon from './Icon';
 import CommentInput from './CommentInput';
 
@@ -11,9 +12,9 @@ function renderAllCommentsLink(data) {
 function renderComments(data) {
   return (
     <div className={styles.comments}>
-      {data.comments.map((comment) => {
+      {data.comments.map((comment, index) => {
         return (
-          <div key={comment.id} className={styles.comment}>
+          <div key={index} className={styles.comment}>
             <div className={styles.cmtImage}>
               <img src={comment.image} alt={comment.username} />
             </div>

@@ -1,10 +1,10 @@
-function setState(state, newState) {
+const setState = (state, newState) => {
   return { ...state, ...newState };
-}
+};
 
-function clearState() {
+const clearState = () => {
   return {};
-}
+};
 
 export default function(state = {}, action) {
   switch (action.type) {

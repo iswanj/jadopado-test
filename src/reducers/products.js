@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 
-function addComments(state, newState) {
+const addComments = (state, newState) => {
   const newComments = state[newState.id].comments.concat(newState.comment);
-  return { ...state, ...state[newState.id].comments = [] };
-}
+  return { ...state, [newState.id]: { ...state[newState.id], comments: newComments } };
+};
 
 const byId = (state = {}, action) => {
   switch (action.type) {

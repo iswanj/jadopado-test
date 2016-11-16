@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { setState, addComment } from '../actions';
 
@@ -8,16 +8,25 @@ import ProductItem from './components/ProductItem';
 import TopBar from './components/TopBar';
 
 export default class Product extends PureComponent {
+  static propTypes = {
+    products: PropTypes.object
+  }
+
+  static defaultProps = {
+    products: {}
+  }
+
   constructor() {
     super();
     this.addComment = this.addComment.bind(this);
   }
+
   render() {
     const { id } = this.props.router.params;
     return (
       <div className={styles.mainContainer}>
         <section className={styles.products}>
-          <ProductItem data={this.props.products[id]} addComment={this.addComment} />
+          {typeof this.props.products[id] !== 'undefined' && <ProductItem data={this.props.products[id]} addComment={this.addComment} />}
         </section>
         <TopBar />
       </div>

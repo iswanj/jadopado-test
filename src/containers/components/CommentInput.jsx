@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
+
+const scroll = Scroll.animateScroll;
 
 import Icon from './Icon';
 import styles from 'components/comment-input.css';
@@ -9,6 +12,7 @@ class CommentInput extends Component {
 
     this.clickHandler = this.clickHandler.bind(this);
   }
+
   render() {
     return (
       <div className={styles.container}>
@@ -22,6 +26,8 @@ class CommentInput extends Component {
 
   clickHandler() {
     this.props.addComment(this.input.value);
+    this.input.value = "";
+    scroll.scrollToBottom();
   }
 }
 
