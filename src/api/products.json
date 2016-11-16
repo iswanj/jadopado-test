@@ -2,7 +2,6 @@
   {
     "id": 1,
     "title": "Leaf iPhone Case Hard Plastic",
-    "price": 230,
     "owner": {
       "username": "tracymacgrady",
       "image": "https://randomuser.me/api/portraits/men/13.jpg"
@@ -34,7 +33,6 @@
   {
     "id": 2,
     "title": "Leaf iPhone Case Hard Plastic",
-    "price": 230,
     "owner": {
       "username": "aryastark",
       "image": "https://randomuser.me/api/portraits/women/33.jpg"
@@ -65,7 +63,6 @@
   {
     "id": 3,
     "title": "Wood iPhone Case Hard",
-    "price": 230,
     "owner": {
       "username": "patrickjane",
       "image": "https://randomuser.me/api/portraits/men/49.jpg"

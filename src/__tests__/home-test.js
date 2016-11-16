@@ -1,3 +1,4 @@
+jest.mock('react-dom');
 import React from 'react';
 import Home from '../containers/Home';
 
@@ -9,7 +10,6 @@ it('Home page renders correctly', () => {
     {
       "id": 1,
       "title": "Leaf iPhone Case Hard Plastic",
-      "price": 230,
       "owner": {
         "username": "tracymacgrady",
         "image": "https://randomuser.me/api/portraits/men/13.jpg"

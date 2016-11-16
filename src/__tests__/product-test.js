@@ -1,3 +1,4 @@
+jest.mock('react-dom');
 import React from 'react';
 import Product from '../containers/Product';
 
@@ -15,7 +16,6 @@ it('Product page renders correctly', () => {
     1: {
       "id": 1,
       "title": "Leaf iPhone Case Hard Plastic",
-      "price": 230,
       "owner": {
         "username": "tracymacgrady",
         "image": "https://randomuser.me/api/portraits/men/13.jpg"

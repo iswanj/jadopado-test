@@ -57,12 +57,12 @@ function renderSlider(data) {
       infinite: false
     };
 
-    const renderImages = (image) => {
+    const renderImages = (image, index) => {
       const productImage = {
         backgroundImage: `url(${process.env.PUBLIC_URL}/images/${image})`,
         width: `${width}px`
       };
-      return <div className={styles.image} style={productImage}></div>;
+      return <div key={index} className={styles.image} style={productImage}></div>;
     };
 
     return (
@@ -89,7 +89,7 @@ const ProductItem = (props) => {
           <span>{props.data.distance}m</span> away
         </div>
       </div>
-      <div className={styles.productImg} style={{ width: `${width}` }} onClick={() => handleClick(props.data.id)}>
+      <div className={styles.productImg} style={{ width: `${width}px` }} onClick={() => handleClick(props.data.id)}>
         {renderSlider(props.data)}
         <div className={styles.imageDetails}>
           <div className={styles.name}>

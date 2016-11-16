@@ -29,12 +29,18 @@ exports[`test Home page renders correctly 1`] = `
       </div>
       <div
         className={undefined}
-        onClick={[Function]}>
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "1024px",
+          }
+        }>
         <div
           className={undefined}
           style={
             Object {
               "backgroundImage": "url(/images/leaf-iphone-case.jpg)",
+              "width": "1024px",
             }
           } />
         <div
