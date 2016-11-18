@@ -1,5 +1,3 @@
-# jadopado-test
-
 ### Run Sample
 If you are using **yarn package manager** run
 - `yarn`
